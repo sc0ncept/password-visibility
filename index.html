@@ -4,29 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Password Visibility</title>
-
-  <style type="text/css">
-    body {
-      margin: 1em auto;
-      max-width: 40em;
-      width: 88%;
-    }
-
-    label {
-      display: block;
-      width: 100%;
-    }
-
-    input {
-      margin-bottom: 1em;
-    }
-
-    [type="checkbox"] {
-      margin-bottom: 0;
-      margin-right: 0.25em;
-    }
-  </style>
 </head>
 
 <body>
@@ -57,25 +36,7 @@
     </p>
   </form>
 
-  <script>
-
-    // Variables
-    const passInput = document.querySelector('#password');
-    const checkbox = document.querySelector('#show-password');
-
-    // Method
-    const showPassword = function () {
-      if (checkbox.checked) {
-        passInput.type = "text";
-      } else {
-        passInput.type = "password";
-      }
-    }
-
-    // Event Listener
-    checkbox.addEventListener('click', showPassword);
-
-  </script>
+  <script src="index.js"></script>
 
 </body>
 
